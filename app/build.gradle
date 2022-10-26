@@ -38,8 +38,7 @@ android {
     }
     applicationVariants.all { variant ->
         variant.outputs.all {
-            def fileName = project.name + '-' + variant.name + '-V' +
-                    defaultConfig.versionName + ".apk"
+            def fileName = project.name + '-' + variant.name + ".apk"
             outputFileName = fileName
         }
     }
